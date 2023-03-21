@@ -4,7 +4,7 @@ export default async function fetchData(req, res) {
   const options = {
     method: "GET",
     url: "https://realtor.p.rapidapi.com/locations/v2/auto-complete",
-    params: { input: req.query.term, limit: "10" },
+    params: { input: "new york", limit: "10" },
     headers: {
       "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
       "X-RapidAPI-Host": "realtor.p.rapidapi.com",
